@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="encabezado">
+      <div class="iniciales">A&C</div>
+      <p class="texto-biblico">" El amor nunca falla"
+        <br>(1 corintios 13:8)</p>
+    </div>
+
+    <img src="foto-novios.jpg" alt="Novios" class="foto">
+
+    <div class="tarjeta">
+        <p>TENEMOS EL HONOR DE <br>INVITARTE A NUESTRA BODA</p>
+        <h1>Anthony y Carmen</h1>
+        <div class="info">
+          <span>LUNES</span>
+          <span class="fecha">14</span>
+          <span>JULIO 2025</span>
+
+        </div>
+        <div class="play">
+          <p>DALE PLAY</p>
+          <button class="play-btn">▶</button>
+        </div>
+        
+        <!-- Contador movido aquí -->
+        <div class="contador-interno">
+          <p>Sólo faltan</p>
+          <div id="countdown">
+            <div><span id="dias">--</span><br><small>DÍAS</small></div>
+            <div><span id="horas">--</span><br><small>HORAS</small></div>
+            <div><span id="minutos">--</span><br><small>MINUTOS</small></div>
+            <div><span id="segundos">--</span><br><small>SEGUNDOS</small></div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="seccion-fotos">
+      <img src="foto1.jpg" alt="Momentos felices" class="foto-scroll" id="fotoScroll">
+    </div>
+      
+    <!-- Padres de la Novia -->
+    <div class="seccion-padres">
+      <h2 class="titulo-seccion">Nuestros Padres:</h2>
+      <div class="padres-grupo">
+        <h3>DE LA NOVIA</h3>
+        <p>Benedicta Barrientos Carpio<br> Salvador Agripino Huamani Mendoza</p>
+      </div>
+      <div class="padres-grupo">
+        <h3>DEL NOVIO</h3>
+        <p>Martha Sabina Cardenas Tenorio<br>Jose Gabriel Tataje Maldonado</p>
+      </div>
+    </div>
+
+    <!-- Lugar de la Ceremonia -->
+    <div class="seccion-lugar">
+      <div class="icono-iglesia">🏠</div>
+      <h2 class="titulo-lugar">Discurso Matrimonial</h2>
+      <div class="info-ceremonia">
+        <p class="hora-ceremonia">Hora: 12:00 p.m.</p>
+        <p class="direccion-ceremonia">Urb. Nueva California<br>
+        Avenida Fernando León Azcárate<br>
+        Mz. A Lt. 13 - Ica</p>
+        <button class="btn-mapa">Ver mapa</button>
+      </div>
+      
+      <div class="imagen-iglesia">
+        <img src="ceremonia-foto.jpg" alt="Lugar de la ceremonia" class="foto-iglesia">
+      </div>
+    </div>
+
+    <!-- Lugar de la Recepción -->
+    <div class="seccion-recepcion">
+        <h2 class="titulo-lugar">Recepción - 4:00 p.m.</h2>
+        <div class="imagen-recepcion">
+          <img src="foto-recepcion.jpg" alt="Lugar de la recepción" class="foto-iglesia">
+        </div>
+        <p class="direccion-ceremonia">
+          FERCATA, Super mz K lote Q-23, Sta Rosa del Palmar - Ica
+        </p>
+        <button class="btn-mapa">Cómo llegar</button>
+    </div>
+
+    <!-- Itinerario de Boda -->
+    <div class="seccion-itinerario">
+      <h2 class="titulo-itinerario">Itinerario de Boda</h2>
+      
+      <div class="timeline">
+        <div class="evento">
+          <div class="icono-evento">💍</div>
+          <div class="info-evento">
+            <span class="hora">10:00AM</span>
+            <span class="descripcion">MATRIMONIO<br>CIVIL</span>
+          </div>
+        </div>
+    
+        <div class="evento">
+          <div class="icono-evento">🏠</div>
+          <div class="info-evento">
+            <span class="hora">12:00PM</span>
+            <span class="descripcion">CONFERENCIA<br>MATRIMONIAL</span>
+          </div>
+        </div>
+    
+        <div class="evento">
+          <div class="icono-evento">📸</div>
+          <div class="info-evento">
+            <span class="hora">2:00PM</span>
+            <span class="descripcion">FOTOGRAFÍA</span>
+          </div>
+        </div>
+    
+        <div class="evento">
+          <div class="icono-evento">🪩</div>
+          <div class="info-evento">
+            <span class="hora">4:00PM</span>
+            <span class="descripcion">Recepción</span>
+          </div>
+        </div>
+    
+        <div class="evento">
+          <div class="icono-evento">🚕</div>
+          <div class="info-evento">
+            <span class="hora">10:00PM</span>
+            <span class="descripcion">NOS DESPEDIMOS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Código de Vestimenta -->
+    <div class="seccion-vestimenta">
+      <h2 class="titulo-vestimenta">Código de Vestimenta</h2>
+      <p class="tipo-vestimenta">FORMAL</p>
+      
+      <div class="vestimenta-iconos">
+        <div class="vestido-icono">👗</div>
+        <div class="traje-icono">👔</div>
+      </div>
+      
+      <div class="nota-vestimenta">
+        <p><strong>POR FAVOR NO USAR BLANCO O SIMILARES</strong></p>
+        <p class="aclaracion">(Colores reservados para la novia)</p>
+        
+        <div class="nota-niños">
+          <p>Nos encantaría que los niños nos acompañen en esta celebración tan especial. Contamos contigo para su constante supervisión.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sugerencia de Regalo -->
+    <div class="seccion-regalo">
+        <h2 class="titulo-regalo">Sugerencia de Regalo</h2>
+        
+        <p class="mensaje-regalo">
+          NUESTRO MEJOR REGALO SERÁ<br>
+          CELEBRAR CONTIGO ESTE DÍA TAN<br>
+          ESPECIAL. CUALQUIER DETALLE DE<br>
+          TU PARTE SERÁ BIENVENIDO CON<br>
+          MUCHO CARIÑO.<br>
+          LES DEJAMOS NUESTRAS<br>
+          SUGERENCIAS:
+        </p>
+        
+        <div class="iconos-regalo">
+          <div class="icono-sobre">✉️</div>
+          <div class="icono-caja">🎁</div>
+        </div>
+        
+        <div class="opciones-regalo">
+          <div class="opcion-regalo">
+            <h3>LLUVIA DE SOBRES</h3>
+          </div>
+          
+          <div class="opcion-regalo">
+            <h3>REGALO</h3>
+            <div class="info-regalo">
+              <div class="numero-cuenta">898 3414574353</div>
+              <div class="nombre-titular">Carmen Rosa Huamani Barrientos</div>
+              <div class="numero-cuenta">898 3138257896</div>
+              <div class="nombre-titular">Anthony Martin Tataje Cardenas</div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Sección de Confirmación -->
+    <div class="seccion-confirmacion">
+      <h2 class="titulo-confirmacion">¡Te esperamos!</h2>
+      <p class="mensaje-confirmacion">TU PRESENCIA ES IMPORTANTE<br>PARA NOSOTROS, POR FAVOR<br>CONFIRMA TU ASISTENCIA.</p>
+      <button class="btn-confirmar">Confirmar</button>
+      <p class="frase-amor">
+        "Eres absolutamente bella, amada mía, no hay defecto en ti" (Cant. 4:7).<br>
+        "Mi amado es deslumbrante y sonrosado, sobresale entre diez mil".<br>
+        "Todo en él es deseable. Ese es mi amado, ese es el amor mío" (Cant. 5:10, 16b).
+      </p>
+      
+      <div class="imagen-confirmacion">
+        <img src="foto-confirmacion2.jpg" alt="Anthony y Carmen" class="foto-confirmacion">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

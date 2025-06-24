@@ -1,0 +1,798 @@
+/* Importar fuentes adicionales */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;600&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500;600&family=Italiana&family=Alex+Brush&family=Crimson+Text:wght@400;600&family=Libre+Baskerville:wght@400;700&family=Pinyon+Script&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #f9f9f6 0%, #f0ede8 100%);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Encabezado */
+.iniciales {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4rem;
+    color: #c4a876;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.texto-biblico {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876;
+}
+
+/* Tarjeta Principal */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.tarjeta p {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tarjeta h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    color: #c4a876;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.fecha {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #c4a876;
+    font-weight: 600;
+}
+
+/* CORRECCIÓN DEL BOTÓN PLAY */
+.play {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play p {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(196, 168, 118, 0.6);
+}
+
+.play-btn:active {
+    transform: scale(0.95);
+}
+
+/* CORRECCIÓN DEL CONTADOR */
+.contador-interno {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(196, 168, 118, 0.2);
+}
+
+.contador-interno p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #c4a876;
+    font-weight: 600;
+}
+
+#countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    font-family: 'Cinzel', serif;
+    max-width: 100%;
+}
+
+.countdown-item {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f6f3 100%);
+    padding: 1.2rem 0.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(196, 168, 118, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.countdown-item span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c4a876;
+    font-family: 'Cinzel', serif;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.countdown-item small {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.65rem;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* Secciones Generales */
+.seccion-padres, .seccion-padrinos, .seccion-lugar, 
+.seccion-recepcion, .seccion-itinerario, .seccion-vestimenta,
+.seccion-confirmacion, .seccion-regalo {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.titulo-seccion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* Padres */
+.padres-grupo {
+    margin: 2rem 0;
+}
+
+.padres-grupo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.padres-grupo p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Lugar de Ceremonia */
+.icono-iglesia {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #c4a876;
+}
+
+.titulo-lugar {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.info-ceremonia {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.hora-ceremonia {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.direccion-ceremonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+.foto-iglesia {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876;
+}
+
+.btn-mapa {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-mapa:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.6);
+}
+
+/* Sección de Recepción */
+.seccion-recepcion .titulo-lugar {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.seccion-recepcion .direccion-ceremonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    font-weight: 400;
+}
+
+.imagen-recepcion img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876;
+    margin-bottom: 1.5rem;
+}
+
+/* ITINERARIO MEJORADO - TEXTO AL LADO DE EMOJIS */
+.titulo-itinerario {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 2.5rem; /* Posición más a la izquierda */
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #c4a876, #d4b886, #c4a876);
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.evento {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem; /* Espacio para el ícono */
+}
+
+.icono-evento {
+    position: absolute;
+    left: 2.5rem; /* Alineado con la línea */
+    font-size: 1.2rem;
+    background: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 3px solid #c4a876;
+    z-index: 2;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+}
+
+.info-evento {
+    text-align: left; /* Texto alineado a la izquierda */
+    flex: 1;
+}
+
+.hora {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c4a876;
+    display: block;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.descripcion {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.evento:hover .icono-evento {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 6px 18px rgba(196, 168, 118, 0.3);
+    transition: all 0.3s ease;
+}
+
+.evento:hover .hora {
+    color: #b39660;
+    transition: color 0.3s ease;
+}
+
+/* Vestimenta */
+.titulo-vestimenta {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.tipo-vestimenta {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin: 1rem 0 2rem;
+    letter-spacing: 3px;
+}
+
+.vestimenta-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.vestido-icono, .traje-icono {
+    font-size: 4rem;
+}
+
+.nota-vestimenta {
+    margin-top: 2rem;
+}
+
+.nota-vestimenta p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.nota-vestimenta strong {
+    font-family: 'Cinzel', serif;
+    color: #c4a876;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.aclaracion {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem !important;
+    color: #888 !important;
+}
+
+.nota-niños {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.nota-niños p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Sección de Sugerencia de Regalo */
+.titulo-regalo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.mensaje-regalo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 2rem 0;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.iconos-regalo {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.icono-sobre, .icono-caja {
+    font-size: 4rem;
+    color: #c4a876;
+}
+
+.opciones-regalo {
+    margin: 2rem 0;
+}
+
+.opcion-regalo {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.opcion-regalo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info-regalo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.numero-cuenta {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+.nombre-titular {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Sección de Confirmación */
+.titulo-confirmacion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.mensaje-confirmacion {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 2rem 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.btn-confirmar {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-confirmar:hover {
+    transform: translate(-2px);
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.6);
+}
+
+.frase-amor {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #666;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.foto-confirmacion {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+/* Fotos que cambian */
+.seccion-fotos {
+    margin: 3rem 0;
+}
+
+.foto-scroll {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .iniciales {
+        font-size: 3rem;
+    }
+    
+    .tarjeta h1 {
+        font-size: 2.5rem;
+    }
+    
+    .fecha {
+        font-size: 2.5rem;
+    }
+    
+    .contador-interno p {
+        font-size: 1.1rem;
+    }
+    
+    #countdown span {
+        font-size: 1.5rem;
+    }
+    
+    #countdown div {
+        padding: 0.8rem 0.3rem;
+    }
+    
+    .vestimenta-iconos {
+        gap: 2rem;
+    }
+    
+    .vestido-icono, .traje-icono {
+        font-size: 3rem;
+    }
+    
+    .titulo-confirmacion {
+        font-size: 2.2rem;
+    }
+    
+    .mensaje-confirmacion {
+        font-size: 0.9rem;
+    }
+    
+    .btn-confirmar {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .timeline {
+        position: relative;
+        padding: 2rem 0;
+        max-width: 320px; /* Reducido para centrar más */
+        margin: 0 auto;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 1.8rem; /* Más centrado */
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, #c4a876, #d4b886, #c4a876);
+        border-radius: 2px;
+        transform: translateX(-50%); /* AGREGAR esta línea */
+    }
+    
+    .icono-evento {
+        left: -2.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+
+    .titulo-regalo {
+        font-size: 2.2rem;
+    }
+    
+    .iconos-regalo {
+        gap: 2rem;
+    }
+    
+    .icono-sobre, .icono-caja {
+        font-size: 3rem;
+    }
+    
+    .mensaje-regalo {
+        font-size: 0.9rem;
+    }
+    
+    .numero-cuenta {
+        font-size: 1rem;
+    }
+    /* Busca la sección de "Responsivo" en tu archivo style.css y reemplaza estas reglas: */
+
+/* Busca la sección de "Responsivo" en tu archivo style.css y reemplaza estas reglas: */
+
+@media (max-width: 600px) {
+    .timeline {
+        padding: 2rem 0;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .timeline::before {
+        left: 2rem; /* Más cerca del borde en móvil */
+        transform: translateX(-50%);
+    }
+    
+    .evento {
+        padding-left: 4.2rem; /* Menos espacio en móvil */
+    }
+    
+    .icono-evento {
+        left: 2rem; /* Alineado con la línea */
+        width: 1.4rem;
+        height: 1.4rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        transform: translateX(-50%);
+    }
+    
+    .info-evento {
+        text-align: left; /* Mantener texto a la izquierda */
+    }
+    
+    .hora {
+        font-size: 1.2rem;
+    }
+    
+    .descripcion {
+        font-size: 0.9rem;
+    }
+}
+}
